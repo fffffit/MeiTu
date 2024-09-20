@@ -1,0 +1,13 @@
+<!-- <canvas class='visitingCardCanvas' canvas-id="visitingCardCanvas"></canvas> -->
+<image class='visitingCardCanvas' src="/pages/images/名片.png" mode=""/>
+<view class = 'btnView'>
+  <button class='produceBtn'  bindtap='saveVisitingCard' style="background-color:#e996cd ;">
+    生成名片
+  </button>
+</view>
+<!-- <view class = 'btnShareView'>
+  <button class='produceBtn' type='primary' bindtap='toSharePic'>
+    分享到照片墙
+  </button>
+</view> -->
+

@@ -1,0 +1,32 @@
+.contentBottom {
+  height: 1000px;
+  padding: 60rpx 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ceab5f;
+}
+
+.tab-right {
+  width: 90%;
+  margin: 20rpx auto;
+  height: 2000px;
+  background: #ceab5f;
+}
+.right-item {
+  padding: 0 20rpx;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.content-item {
+  
+  width: 95%;
+  margin-top: 5px;
+  background: #ceab5f;
+}
+.avater {
+  height: 200px;
+  width: 275px;
+  background: #ceab5f;
+}

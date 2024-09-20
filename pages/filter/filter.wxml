@@ -1,0 +1,14 @@
+<!-- 拍照功能-可添加图片做模板 -->
+<view class="container" style=" display: flex; box-sizing: border-box">
+  <image  wx:if="{{isLeaded}}" plain style="{{filter}}" src="{{bgImageSrc}}" mode=""/>
+  <camera wx:else plain device-position="{{cameraPosition}}"  flash="auto" binderror="handleError" style="width: 100%; height: 100%;{{filter}}"> 
+  </camera>
+  <!-- <image  wx:if="{{isLeaded}}" plain src="{{bgImageSrc}}" mode=""/> -->
+  <view style="display: flex;justify-content: space-between;">
+    <button bindtap="takePhoto"  style="width: 70px;font-size: 10px;background-color: #e996cd;">拍照</button>
+    <button bindtap="chooseMedia0" style="width: 90px;font-size: 10px;background-color: #e996cd;">导入图片</button>
+    <button bindtap="getFilter" style="width: 90px;font-size: 10px;background-color: #e996cd;">使用滤镜</button>
+    <button bindtap="savePicture" style="width: 90px;font-size: 10px;background-color: #e996cd;">保存图片</button>
+  </view>
+
+</view>

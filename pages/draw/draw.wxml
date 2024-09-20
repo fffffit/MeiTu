@@ -1,0 +1,13 @@
+<view class = 'drawView' style='top:{{height-52}}px; left:{{width/2-25}}px;'>
+  <view class='drawBView' bindtap='toDraw'>
+    <image src = '/pages/images/drawPic.png' class = 'drawImage'>
+    </image>
+  </view>
+</view>
+<view class='paintView'>
+  <view class='paintCell' wx:for = '{{dataArr}}' wx:for-item="item" wx:key="cellSharePaintingKey" wx:for-index="idx">
+   <image mode='aspectFill' style='width:{{(width-45)/2}}px; height:{{(width-45)/2*1.7}}px;' src='{{item.sharePaintingUrl}}' bindtap='toDetail' id='{{item.sharePaintingUrl}}'>
+   </image>
+  </view>
+</view>
+

@@ -1,0 +1,19 @@
+<!--pages/wordFill/wordCombine.wxml-->
+<canvas-drag id="canvas-drag" graph="{{graph}}" style='width:{{imageWidth}}px;' height="1200"></canvas-drag>
+
+<!-- <view class='btnView'>
+  <button class='addTextBtn' style="background-color:#e996cd ;" bindtap='onAddImage'>
+    添加图片
+  </button>
+</view> -->
+
+
+<view class='btnView' style='height:60px'>
+  <button class='addTextBtn' style="background-color:#e996cd ;" bindtap='onAddImage'>
+    添加图片
+  </button>
+  <button class='addTextBtn'  bindtap='onExport' style="background-color:#e996cd ;">
+    导出图片
+  </button>
+</view>
+

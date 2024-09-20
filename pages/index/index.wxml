@@ -1,0 +1,65 @@
+<swiper autoplay interval="2000" circular indicator-color="#0094ff" indicator-dots indicator-active-color="#ff0094" style="height: 170px;">
+<swiper-item><image mode="widthFix" src="/pages/images/lun1.jpg"></image></swiper-item>
+<swiper-item><image mode="widthFix" src="/pages/images/lun2.jpg"></image></swiper-item>
+<swiper-item><image mode="widthFix" src="/pages/images/lun3.jpg"></image></swiper-item>
+</swiper>  
+<view style="display: flex; flex-direction: row;">
+<button style="height:70px;width: 150px;flex: 1;margin: 5px 5px 5px 5px;" class="answer-button1" bindtap="jumpXi">
+   <image class="img" src="/pages/images/xiangji.png" style="margin-right: 15px;"></image>
+   <view style="width: 100px;margin-top: 12px;font-size: 20px;">相机</view>
+   <view style="margin-top: 6px;font-size: 15px;">美图tips</view>
+</button>
+
+<button style="height:70px;width: 150px;flex: 1;margin: 5px 5px 5px 5px;"class="answer-button2" bindtap="jumpPing" >
+  <image class="img" src="/pages/images/pin.png"  style="margin-right:15px;"></image>
+   <view style="width: 100px;margin-top: 12px;font-size: 20px;">拼图</view>
+   <view style="margin-top: 6px;font-size: 15px;">自由拼图</view>
+</button>
+</view>
+<!-- <view class=".container1" style="margin-top: 0;">
+
+ <view class=".container3" style="height: 70px;width: 80px;"><button style="height: 40px;width: 40px;background: #4b5ec5;" class="button1"><image style="width: 30px;height: 30px; margin-top: 3px;" src="/pages/images/抠图.png"></image></button>抠图合影
+ </view>
+ <view class=".container3"style="height: 70px;width: 80px;"><button style="height: 40px;width: 40px;background: #f0af24;" class="button1"><image style="width: 25px;height: 25px; margin-top: 5px;" src="/pages/images/证件照.png"></image></button>证件照
+ </view>
+
+</view> -->
+
+<view class=".container2">
+  <view class=".container3"style="height: 70px;width: 80px;"><button style="height: 40px;width: 40px;background: #b684df;" class="button1" bindtap="gotoPage"><image style="width: 35px;height: 35px; margin-top: 3px;" src="/pages/images/矩形备份 164.png"></image></button>滤镜
+ </view>
+ <view class=".container3" style="height: 70px;width: 80px;"><button bindtap="visitingCard" style="height: 40px;width: 40px;background: #4b5ec5;" class="button1"><image style="width: 30px;height: 30px; margin-top: 5px;" src="/pages/images/KHCFDC_头像 .png"></image></button>制作名片
+ </view>
+ <view class=".container3"style="height: 70px;width: 80px;"><button bindtap="waterMark" style="height: 40px;width: 40px;background: #b684df;" class="button1"><image style="width: 30px;height: 30px; margin-top: 5px;" src="/pages/images/相机.png"></image></button>添加水印
+ </view>
+ <view class=".container3"style="height: 70px;width: 80px;"><button bindtap="word"  style="height: 40px;width: 40px;background: #4b5ec5;" class="button1"><image style="width: 25px;height: 25px; margin-top: 7px;" src="/pages/images/加文字.png"></image></button>图片加文字
+ </view>
+</view>
+
+<view class="container2">
+ <view class="container3"style="height: 70px;width: 80px;"><button style="height: 40px;width: 40px;"  bindtap="jumpXi" class="button1"><image style="width: 30px;height: 30px; margin-top: 5px;" src="/pages/images/Carnival-Icons_mask-.png"></image></button>辅助相机
+ </view>
+ <view class="container3"style="height: 70px;width: 80px;"><button bindtap="paint" style="height: 40px;width: 40px;background: #d66d5b;" class="button1"><image style="width: 30px;height: 30px; margin-top: 5px;" src="/pages/images/Agent.png"></image></button>绘画画板
+ </view>
+ <view class="container3"style="height: 70px;width: 80px;"><button  bindtap="jumpPing" style="height: 40px;width: 40px;background: #eb64be;" class="button1"><image style="width: 35px;height: 35px; margin-top: 3px;" src="/pages/images/九宫格切图.png"></image></button>自由拼图
+ </view>
+ <view  class=".container3" style="height: 70px;width: 80px;"><button  bindtap="photoCombine"  style="height: 40px;width: 40px;" class="button1"><image style="width: 35px;height: 35px; margin-top: 3px;" src="/pages/images/画质修复.png"></image></button>长拼图
+ </view>
+</view>
+
+<text style="color:#d670b4">美图技巧</text>
+<view class="container">
+  <view wx:for="{{cardTeams}}" wx:key="{{index}}" wx:for-item="cardTeam" class="item">
+    <image class="img" src="{{cardTeam.imgsrc}}" mode="scaleToFill"></image>
+    <view class="number-wrapper">
+      <text class="name">{{cardTeam.name}}</text>
+      <view class="count-wrapper">
+        <text class="count">{{cardTeam.count}}</text>
+      </view>
+       <view class="details">
+      <navigator url="/pages/detail/detail?goodsId={{index}}" bindtap="yasuo" >查看详情</navigator>
+      </view>
+    </view>
+  </view>
+</view>
+ 

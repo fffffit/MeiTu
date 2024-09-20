@@ -1,0 +1,19 @@
+<!-- 无限自动滚动列表 -->
+<view class='contentBottom'>
+    <swiper class="tab-right" style='background:{{bgColor}};' vertical="true"  circular="true" interval="2000" display-multiple-items='4'>
+      <view class="right-item">
+        <block wx:for-index="idx" wx:for='{{aa}}'>
+          <swiper-item>
+            <view class='content-item' style="height: 600px;">
+              <image src='{{item.avatarUrl}}' style="{{item.Style}}" class='avater'></image>
+              <view style="display: flex;">
+                <button style="border-radius: 25px;margin-top: 1px;" bindtap="gotoPage" data-bid="{{item.id}}" data-id="{{item.id}}">{{item.nickName}}</button>
+                <button style="border-radius: 25px;margin-top: 1px;" bindtap="cancelFavorites" data-bid="{{item.id}}" wx:if="{{item.isAdd}}" plain>{{item.collected}}</button>
+                <button style="border-radius: 25px;margin-top: 1px;" bindtap="addFavorites" data-bid="{{item.id}}" wx:else plain>{{item.collect}}</button>
+              </view>
+            </view>
+          </swiper-item>
+        </block> 
+      </view>
+    </swiper>
+  </view>

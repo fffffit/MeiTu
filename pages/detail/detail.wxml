@@ -1,0 +1,4 @@
+<!-- photoImg就是需要渲染的数据 -->
+<view>
+    <image src="{{photoImg}}" />
+</view>

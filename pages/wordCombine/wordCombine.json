@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "自由拼图",
+  "usingComponents": {
+    "canvas-drag": "/components/canvas-drag/index"
+  }
+}
